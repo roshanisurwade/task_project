@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Registration Table
+    </title>
+    <link rel="stylesheet" href="C:\Users\Abc\Downloads\task1\style.css">
+</head>
+
+<body>
+	<center>
+		<h1>Registration Table</h1>
+	
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                	<div>
+                             <label>EMP Code </label>
+                             <input type="text" name="empCode" id="empCode">
+                        </div>
+
+                    
+                        <div>
+                             <label>Full Name </label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                             <input type="text" name="fullName" id="fullName">
+                        </div>
+                        <div>
+                             <label for="birthday">DateOfBirth :</label>
+                             <input type="date" id="birthday" name="birthday">
+                        </div>
+
+                    
+                        <div>
+                             <label>Email </label>
+                             <input type="email" name="email" id="email">
+                        </div>
+
+
+                        <div>
+                              <label>Salary </label>
+                              <input type="text" name="salary" id="salary">
+                        </div>
+                        <div>
+                            <label>City </label>
+                            <input type="text" name="city" id="city">
+                        </div>
+                        <div  class="form-action-buttons">
+                        	<input type="submit" value="Submit">
+                        </div>
+                
+                </form>
+            </td>
+    </center>
+
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                    	<center>
+                    		<tr>
+                    		<th>EMP Code</th>
+                            <th>Full Name</th>
+                            <th>DateOfBirth</th>
+        
+                            <th>Email</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th>Operation</th>
+                        </tr>
+                    	</center>
+                        
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="C:\Users\Abc\Downloads\task1\script.js"></script>
+</body>
+
+</html>
+	
+
+	
